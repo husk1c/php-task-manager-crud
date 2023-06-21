@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: #050A30;
+}
+section{
+    min-height: 100svh;
+}
+.form-add{
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+form label{
+    color:white;
+}
+.container{
+    position: relative;
+}
+.title{
+    position: absolute;
+    background: none;
+    left: 10px;
+    top: 4px;
+    transition: 0.3s;
+}
+.rest{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+form input[type="text"]{
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    transition: 0.3s;
+}
+form input[type="text"]:focus{
+    transform: scale(1.03);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+form input[type="text"]::placeholder{
+    display: none;
+    opacity: 0;
+}
+form input[type="text"]:focus + .title,
+form input[type="text"]:not(:placeholder-shown) + .title{
+    transform: translate(-10px, -30px);
+}
+form input[type="date"]{
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    transition: 0.3s;
+}
+form input[type="date"]:focus{
+    transform: scale(1.03);
+}
+form input[type="submit"]{
+    padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    color: white;
+    background-color: #000C66;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+form input[type="submit"]:hover{
+    transform: scale(0.9);
+}
+a[href^="index.php"]{
+    display: flex;
+    width: fit-content;
+    margin: 20px 20px;
+    padding: 6px 8px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255,255,255, 0.3);
+    border-radius: 10px;
+    transition: 1s;
+}
+a[href^="index.php"]:hover{
+    border: 1px solid rgba(255,255,255, 0.9);
+    transform: scale(0.95);
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: #050A30;
+}
+a[href^="index.php"]{
+    display: flex;
+    width: fit-content;
+    margin: 20px 20px;
+    padding: 6px 8px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255,255,255, 0.3);
+    border-radius: 10px;
+    transition: 1s;
+}
+a[href^="index.php"]:hover{
+    border: 1px solid rgba(255,255,255, 0.9);
+    transform: scale(0.95);
+}
+.confrim-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+label{
+    color: white;
+}
+input[type=submit]{
+    display: flex;
+    width: fit-content;
+    margin: 8px 20px;
+    padding: 6px 8px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255,255,255, 0.3);
+    border-radius: 10px;
+    transition: 1s;
+}
+input[type=submit]:hover{
+    border: 1px solid rgba(255,255,255, 0.9);
+    transform: scale(0.95);
+}

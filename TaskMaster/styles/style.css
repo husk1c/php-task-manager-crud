@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.main-section{
+    min-height: 100svh;
+    background-color: #050A30;
+}
+.main-container{
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-container h2{
+    color: white;
+    margin: 10px 0px;
+}
+.tasks-container{
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+.tasks-container h1{
+    color: white;
+    margin-left: 10px;
+}
+.task-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    width: 400px;
+    border: 1px solid rgba(255,255,255, 0.9);
+    border-radius: 10px;
+    padding: 10px 12px;
+    position: relative;
+}
+
+.task-container h3, p{
+    color: white;
+}
+.task-container i{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+    transition: 1s;
+    margin: 30px 25px;
+}
+.task-container i[class*="fa-trash"]{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    transition: 1s;
+    margin: 30px 25px;
+}
+
+.task-container i:hover{
+    color:#000C66;
+}
+.commands{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    height: 50px;
+}
+.commands a{
+    padding: 6px 8px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255,255,255, 0.3);
+    border-radius: 10px;
+    transition: 1s;
+}
+.commands a:hover{
+    border: 1px solid rgba(255,255,255, 0.9);
+    transform: scale(0.95);
+}
